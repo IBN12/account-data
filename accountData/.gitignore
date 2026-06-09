@@ -1,0 +1,38 @@
+# Compiled / build output
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.dcu
+*.o
+*.obj
+*.so
+*.a
+
+# Delphi build & history folders
+__history/
+__recovery/
+Win32/
+Win64/
+Android/
+Android64/
+iOSDevice32/
+iOSDevice64/
+OSX32/
+OSX64/
+Linux64/
+
+# Local / user-specific project file
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.skincfg
+*.dsk
+*.~*
+
+# Map / debug files
+*.map
+*.drc
+*.rsm
+*.tds
