@@ -1,0 +1,50 @@
+unit main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.pngimage, accountEntryWin;
+
+type
+  TForm1 = class(TForm)
+    accountDataTitle: TLabel;
+    accountDataSubtitle: TLabel;
+    newAccountLabel: TLabel;
+    newAccountIcon: TImage;
+    procedure FormPaint(Sender: TObject);
+    procedure newAccountIconClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  // Main Form variables:
+  Form1: TForm1;
+
+  // Account Entry Window Variables:
+  accountEntryForm: TaccountEntryWindow;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormPaint(Sender: TObject);
+begin
+  Canvas.Pen.Color := clRed;
+  Canvas.Pen.Width := 1;
+  Canvas.MoveTo(50,115);
+  Canvas.LineTo(clientWidth - 40, 115);
+end;
+
+procedure TForm1.newAccountIconClick(Sender: TObject);
+begin
+  accountEntryWindow.Show;
+
+  accountEntryForm := TaccountEntryWindow
+end;
+
+end.

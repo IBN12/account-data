@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2026/06/08 19:25:37.544,=G:\Delphi Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/08 19:27:21.819,G:\Delphi Projects\accountData\main.dfm=G:\Delphi Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/06/08 19:27:21.819,G:\Delphi Projects\accountData\main.pas=G:\Delphi Projects\Unit1.pas</Transaction>
+    <Transaction>2026/06/08 19:28:43.127,G:\Delphi Projects\accountData\accountData.dproj=G:\Delphi Projects\Project1.dproj</Transaction>
+    <Transaction>2026/06/08 20:57:15.113,=G:\Delphi Projects\accountData\Unit2.pas</Transaction>
+    <Transaction>2026/06/08 21:03:21.356,G:\Delphi Projects\accountData\accountEntryWin.dfm=G:\Delphi Projects\accountData\Unit2.dfm</Transaction>
+    <Transaction>2026/06/08 21:03:21.356,G:\Delphi Projects\accountData\accountEntryWin.pas=G:\Delphi Projects\accountData\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
