@@ -1,6 +1,9 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  VertScrollBar.ButtonSize = 1
+  VertScrollBar.Smooth = True
+  VertScrollBar.Tracking = True
   Caption = 'Account Data'
   ClientHeight = 722
   ClientWidth = 878
@@ -13,9 +16,9 @@ object Form1: TForm1
   OnPaint = FormPaint
   TextHeight = 15
   object accountDataTitle: TLabel
-    Left = 40
+    Left = 128
     Top = 48
-    Width = 281
+    Width = 229
     Height = 35
     Alignment = taCenter
     Caption = 'Account Data'
@@ -27,7 +30,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object accountDataSubtitle: TLabel
-    Left = 48
+    Left = 144
     Top = 89
     Width = 309
     Height = 19
@@ -40,8 +43,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object newAccountLabel: TLabel
-    Left = 64
-    Top = 143
+    Left = 160
+    Top = 142
     Width = 111
     Height = 19
     Caption = 'New Account'
@@ -53,7 +56,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object newAccountIcon: TImage
-    Left = 181
+    Left = 277
     Top = 128
     Width = 41
     Height = 41
@@ -105,5 +108,75 @@ object Form1: TForm1
       454E44AE426082}
     Stretch = True
     OnClick = newAccountIconClick
+  end
+  object accountDataActiveWindowsPanel: TFlowPanel
+    Left = 16
+    Top = 224
+    Width = 233
+    Height = 441
+    BorderStyle = bsSingle
+    Color = clAntiquewhite
+    ParentBackground = False
+    TabOrder = 0
+    object activeWindowsLabel: TLabel
+      Left = 1
+      Top = 1
+      Width = 186
+      Height = 27
+      Alignment = taRightJustify
+      Caption = 'Active Windows'
+      Color = clInactiveCaption
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'THE SCORE'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      OnClick = activeWindowsLabelClick
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 277
+    Top = 224
+    Width = 593
+    Height = 441
+    HorzScrollBar.Visible = False
+    TabOrder = 1
+    object activeAccountEntriesPanel: TPanel
+      Left = 0
+      Top = 0
+      Width = 589
+      Height = 33
+      Align = alTop
+      AutoSize = True
+      BorderStyle = bsSingle
+      Color = clAntiquewhite
+      ParentBackground = False
+      TabOrder = 0
+      object activeAccountEntriesLabel: TLabel
+        Left = 1
+        Top = 1
+        Width = 583
+        Height = 27
+        Align = alTop
+        Alignment = taCenter
+        AutoSize = False
+        Caption = 'Active Accounts'
+        Color = clInactiveCaption
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'THE SCORE'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+        OnClick = activeWindowsLabelClick
+        ExplicitLeft = -4
+        ExplicitTop = 9
+      end
+    end
   end
 end

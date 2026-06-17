@@ -3,7 +3,10 @@ program accountData;
 uses
   Vcl.Forms,
   main in 'main.pas' {Form1},
-  accountEntryWin in 'accountEntryWin.pas' {accountEntryWindow};
+  accountEntryWin in 'accountEntryWin.pas' {accountEntryWindow},
+  accountEntryData in 'accountEntryData.pas',
+  windowCount in 'windowCount.pas',
+  activeWindows in 'activeWindows.pas';
 
 {$R *.res}
 
